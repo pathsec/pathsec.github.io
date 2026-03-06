@@ -1,0 +1,21 @@
+title: "pathsec.fail"
+description: "notes on red teaming & offensive security research"
+author: "pathsec"
+email: jt@pathsec.fail
+url: "https://pathsec.github.io"
+baseurl: ""
+
+# Build
+markdown: kramdown
+highlighter: rouge
+permalink: /posts/:title/
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

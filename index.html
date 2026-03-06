@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<div class="container">
+  <section class="hero">
+    <p class="hero-eyebrow">// red team & offensive security research</p>
+    <h1>Find the path.<br><em>Document the failure.</em></h1>
+    <p class="hero-desc">
+      Long-form writing on red team operations, exploit development,
+      initial access techniques, and building offensive tooling.
+    </p>
+  </section>
+
+  <section class="post-list">
+    <p class="section-label">latest posts</p>
+
+    {% for post in site.posts %}
+    <a class="post-item" href="{{ post.url | relative_url }}">
+      <div>
+        <h2 class="post-item-title">{{ post.title }}</h2>
+        <p class="post-item-excerpt">{{ post.excerpt | strip_html | truncatewords: 28 }}</p>
+        {% if post.tags.size > 0 %}
+        <div class="post-tags">
+          {% for tag in post.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+        </div>
+        {% endif %}
+      </div>
+      <div class="post-meta">{{ post.date | date: "%b %d, %Y" }}</div>
+    </a>
+    {% endfor %}
+  </section>
+</div>

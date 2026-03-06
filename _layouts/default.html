@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+  {% feed_meta %}
+  {% seo %}
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      <nav class="site-nav">
+        <a href="{{ '/' | relative_url }}">home</a>
+        <a href="{{ '/archive' | relative_url }}">archive</a>
+        <a href="{{ '/about' | relative_url }}">about</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>© {{ site.time | date: '%Y' }} {{ site.author }}</span>
+      <div class="footer-links">
+        <a href="{{ '/feed.xml' | relative_url }}">rss</a>
+        <a href="https://github.com/pathsec" target="_blank" rel="noopener">github</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
