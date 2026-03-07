@@ -59,4 +59,4 @@ The IAM analysis doesn't currently account for SCPs, permission boundaries, or r
 
 ## Closing Thoughts
 
-Cloud environments are difficult to analyze. I've created this tool to help others who have had similar frustrations with trying to visualize attack paths in AWS. This tool is not meant to replace manual analysis, but to complement it. If you find it useful, run into issues, or have ideas for what's missing, feel free to open a pull request.
+Cloud environments are difficult to analyze. I've created this tool to help others who have had similar frustrations with trying to visualize attack paths in AWS. This tool is not meant to replace manual analysis, but to complement it. If you have ideas to contribute, feel free to open a pull request.
