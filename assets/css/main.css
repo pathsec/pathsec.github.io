@@ -417,7 +417,7 @@ pre code {
 
 /* ─── Hamburger ───────────────────────────────────── */
 .nav-toggle {
-  display: none;
+  display: none !important;
   flex-direction: column;
   justify-content: space-between;
   width: 28px;
@@ -444,7 +444,7 @@ pre code {
   .post-item { grid-template-columns: 1fr; }
   .post-meta { padding-top: 0; }
 
-  .nav-toggle { display: flex; flex-direction: column; }
+  .nav-toggle { display: flex !important; flex-direction: column; }
 
   .site-nav {
     display: none !important;
