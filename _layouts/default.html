@@ -25,15 +25,6 @@
     </div>
   </header>
 
-  <script>
-    var btn = document.querySelector('.nav-toggle');
-    var nav = document.querySelector('.site-nav');
-    btn.addEventListener('click', function() {
-      var open = nav.classList.toggle('is-open');
-      btn.setAttribute('aria-expanded', open);
-    });
-  </script>
-
   <main>
     {{ content }}
   </main>
@@ -48,5 +39,13 @@
     </div>
   </footer>
 
+  <script>
+    var btn = document.querySelector('.nav-toggle');
+    var nav = document.querySelector('.site-nav');
+    btn.addEventListener('click', function() {
+      var open = nav.classList.toggle('is-open');
+      btn.setAttribute('aria-expanded', open);
+    });
+  </script>
 </body>
 </html>
