@@ -419,17 +419,19 @@ pre code {
 .nav-toggle {
   display: none;
   flex-direction: column;
-  justify-content: center;
-  gap: 5px;
+  justify-content: space-between;
+  width: 28px;
+  height: 18px;
   background: none;
   border: none;
   cursor: pointer;
-  padding: 4px;
+  padding: 0;
+  flex-shrink: 0;
 }
 
 .nav-toggle span {
   display: block;
-  width: 20px;
+  width: 100%;
   height: 2px;
   background: var(--dim);
   transition: background 0.2s;
@@ -442,10 +444,10 @@ pre code {
   .post-item { grid-template-columns: 1fr; }
   .post-meta { padding-top: 0; }
 
-  .nav-toggle { display: flex; }
+  .nav-toggle { display: flex; flex-direction: column; }
 
   .site-nav {
-    display: none;
+    display: none !important;
     position: absolute;
     top: 100%;
     left: 0;
@@ -457,7 +459,7 @@ pre code {
     padding: 0.5rem 0;
   }
 
-  .site-nav.is-open { display: flex; }
+  .site-nav.is-open { display: flex !important; }
 
   .site-nav a {
     padding: 0.75rem 1.5rem;
