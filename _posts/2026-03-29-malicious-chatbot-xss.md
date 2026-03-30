@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AI and XSS, What Could Go Wrong?"
+title: "I Put a Chatbot on Your Site"
 subtitle: "Abusing XSS to deploy malicious chatbots for social engineering and profit."
 date: 2026-03-29
 tags: [red-team, web, xss, ai]
