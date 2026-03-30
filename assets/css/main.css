@@ -358,10 +358,11 @@ pre code {
 
 /* ─── Images ─────────────────────────────────────── */
 .post-content img {
+  display: block;
   max-width: 100%;
   border-radius: 6px;
   border: 1px solid var(--border);
-  margin: 2rem 0;
+  margin: 2rem auto;
 }
 
 /* ─── Footer ─────────────────────────────────────── */
