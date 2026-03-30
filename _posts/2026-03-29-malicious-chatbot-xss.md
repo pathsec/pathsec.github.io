@@ -8,10 +8,6 @@ tags: [red-team, web, xss, ai]
 
 As if AI wasn't already a headache for governance, I thought I'd add one more fun thing into the mix. AI chatbots have become prevalent across many, many websites. They tend to be implicitly trusted by users to point them in the right direction and assist. You may or may not have one on your website, but what if an attacker could place one there without your permission?
 
-## The Scenario
-
-Consider a target site that is vulnerable to XSS. In this scenario, we could place our own chatbot on the site by loading a widget from our own server that interacts with an LLM controlled by us.
-
 ## Why Chatbots
 
 XSS alone is already a lot to work with for an adversary. But a chatbot specifically gives you a few extra things worth considering:
@@ -20,9 +16,9 @@ XSS alone is already a lot to work with for an adversary. But a chatbot specific
 - Conversations can be steered to move the user off-site to an attacker-controlled page.
 - If styled to match the target site, its a pretty convincing social engineering surface.
 
-## XSS Delivery
+## The Scenario
 
-I created an example site for demonstration purposes.
+Consider a target site that is vulnerable to XSS. In this scenario, we could place our own chatbot on the site by loading a widget from our own server that interacts with an LLM controlled by us. I created an example site for demonstration purposes.
 
 ![Example site, created to showcase payloads]({{ '/assets/img/posts/2026-03-29-malicious-chatbot-xss/example-site.png' | relative_url }})
 
