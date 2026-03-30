@@ -21,7 +21,7 @@
   --font-body:    'Libre Baskerville', Georgia, serif;
   --font-mono:    'JetBrains Mono', monospace;
 
-  --max-w: 740px;
+  --max-w: 860px;
   --gap:   clamp(1.5rem, 5vw, 3rem);
 }
 
